@@ -1,1 +1,528 @@
-<!DOCTYPE html> -<html lang="et"> -<head> - <meta charset="UTF-8"> - <meta name="viewport" content="width=device-width, initial-scale=1.0"> - <title>Alkohol ja Suitsidiennetus</title> - <script src="https://cdn.tailwindcss.com"></script> - <link rel="preconnect" href="https://fonts.googleapis.com"> - <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> - <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> - <style> - body { - font-family: 'Inter', sans-serif; - background-color: #f3f4f6; - color: #1f2937; - } - .container { - max-width: 800px; - } - .card { - background-color: #ffffff; - border: 1px solid #d1d5db; - border-radius: 0.5rem; - box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); - transition: transform 0.3s ease, box-shadow 0.3s ease; - position: relative; - } - .card:hover { - transform: translateY(-0.25rem); - box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); - } - .section-header { - position: relative; - z-index: 10; - } - .section-header::after { - content: ''; - position: absolute; - left: 0; - right: 0; - bottom: -0.5rem; - height: 1.5rem; - background-color: currentColor; - z-index: -1; - border-radius: 0.25rem; - } - .section-header.bg-indigo-700::after { background-color: #4338ca; } - .section-header.bg-red-600::after { background-color: #dc2626; } - .section-header.bg-green-600::after { background-color: #16a34a; } - .icon-box { - background-color: #d1d5db; - width: 3rem; - height: 3rem; - display: flex; - justify-content: center; - align-items: center; - border-radius: 0.5rem; - } - .icon-text-container { - position: relative; - } - .icon-text-container::after { - content: ''; - position: absolute; - top: 0; - left: 0; - width: 100%; - height: 100%; - background-color: rgba(0, 0, 0, 0.1); - transform: skew(-10deg) translate(0.25rem, 0.25rem); - z-index: -1; - } - </style> -</head> -<body class="p-8 bg-gray-100"> - -<div class="container mx-auto"> - <!-- Header Section --> - <header class="text-center mb-16"> - <div class="inline-block px-8 py-4 bg-white rounded-lg shadow-lg"> - <h1 class="text-4xl md:text-5xl font-bold mb-2 text-indigo-700">Alkohol ja suitsiidiennetus</h1> - <p class="text-lg md:text-xl text-gray-600">Ülemaailmsel suitsiidiennetuse päeval, muudame narratiivi.</p> - </div> - </header> - - <!-- Main Content Grid --> - <div class="grid grid-cols-1 md:grid-cols-2 gap-10"> - <!-- Section 1: Mis on seos? --> - <div class="card p-6"> - <div class="bg-indigo-700 text-white p-4 rounded-t-lg font-bold text-xl section-header mb-6">Mida tõendid näitavad?</div> - <div class="flex items-start mb-6"> - <div class="icon-box mr-4"> - <svg class="w-8 h-8 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> - <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path> - </svg> - </div> - <div> - <p class="text-lg font-medium text-gray-700 mb-1">Suurem risk</p> - <p class="text-gray-600">Alkoholi tarbimine on seotud ligi <span class="font-bold text-indigo-700">kahekordse</span> suitsiidist tingitud surma riskiga.</p> - </div> - </div> - <div class="flex items-start"> - <div class="icon-box mr-4"> - <svg class="w-8 h-8 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> - <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path> - </svg> - </div> - <div> - <p class="text-lg font-medium text-gray-700 mb-1">Miks?</p> - <p class="text-gray-600">Alkohol vähendab pidurdust, kahjustab otsustusvõimet ja soodustab impulsiivseid otsuseid.</p> - </div> - </div> - </div> - - <!-- Section 2: Levinud arusaamad vs tegelikkus --> - <div class="card p-6"> - <div class="bg-red-600 text-white p-4 rounded-t-lg font-bold text-xl section-header mb-6">Levinud arusaamised</div> - <div class="flex items-start mb-6"> - <div class="icon-box mr-4 bg-red-200"> - <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> - <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> - </svg> - </div> - <div> - <p class="text-lg font-medium text-red-700 mb-1">Väär arusaam</p> - <p class="text-gray-600">Alkohol on kiire leevendus pingete vähendamiseks.</p> - </div> - </div> - <div class="flex items-start"> - <div class="icon-box mr-4 bg-green-200"> - <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> - <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path> - </svg> - </div> - <div> - <p class="text-lg font-medium text-green-700 mb-1">Tegelikkus</p> - <p class="text-gray-600">Alkohol pikendab ja süvendab raskusi. See ei ole toimetuleku vahend, vaid <span class="font-bold text-red-700">riskifaktor</span>.</p> - </div> - </div> - </div> - </div> - - <!-- Section 3: Mida saame teha? --> - <div class="card mt-10 p-6"> - <div class="bg-indigo-700 text-white p-4 rounded-t-lg font-bold text-xl section-header mb-6">Mida saame kohe teha?</div> - <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"> - <div class="text-center icon-text-container p-4"> - <div class="flex justify-center items-center mb-2"> - <div class="icon-box bg-indigo-200"> - <svg class="w-8 h-8 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> - <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path> - </svg> - </div> - </div> - <p class="font-semibold text-gray-700">Muudame arusaamisi</p> - </div> - <div class="text-center icon-text-container p-4"> - <div class="flex justify-center items-center mb-2"> - <div class="icon-box bg-indigo-200"> - <svg class="w-8 h-8 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> - <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a4 4 0 014-4h.25M17 19h4m-2-2v4"></path> - </svg> - </div> - </div> - <p class="font-semibold text-gray-700">Seome teenused</p> - </div> - <div class="text-center icon-text-container p-4"> - <div class="flex justify-center items-center mb-2"> - <div class="icon-box bg-indigo-200"> - <svg class="w-8 h-8 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> - <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.01 12.01 0 002.944 12c.088 1.48.337 2.923.738 4.301M16 4h4v4m-5 9H5v-4"></path> - </svg> - </div> - </div> - <p class="font-semibold text-gray-700">Kinnitame tõenduspõhist poliitikat</p> - </div> - <div class="text-center icon-text-container p-4"> - <div class="flex justify-center items-center mb-2"> - <div class="icon-box bg-indigo-200"> - <svg class="w-8 h-8 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> - <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path> - </svg> - </div> - </div> - <p class="font-semibold text-gray-700">Hoiame ukse avatuna</p> - </div> - </div> - </div> - - <!-- Footer Section: Abiinfo --> - <div class="text-center mt-10"> - <div class="card p-6"> - <h2 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2">Kui vajad abi</h2> - <p class="text-lg text-gray-600 mb-4">Abi küsimine on tugevus.</p> - <a href="tel:116123" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105 mb-2">Helista 116 123</a> - <a href="https://peaasi.ee/" target="_blank" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">Leia abi Peaasi.ee-st</a> - </div> - </div> -</div> - -</body> -</html> +<!DOCTYPE html> +<html lang="et"> +<head> + <meta charset="UTF-8"> + <meta name="viewport" content="width=device-width, initial-scale=1.0"> + <title>Kingi lapsele kained jõulud</title> + <script src="https://cdn.tailwindcss.com"></script> + <link rel="preconnect" href="https://fonts.googleapis.com"> + <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> + <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> + <style> + :root { + color-scheme: light; + } + body { + font-family: 'Inter', sans-serif; + background: radial-gradient(circle at 20% 20%, rgba(59,130,246,0.15), transparent 25%), + radial-gradient(circle at 80% 0%, rgba(16,185,129,0.18), transparent 25%), + #0f172a; + color: #0f172a; + min-height: 100vh; + } + .frosted { + background: rgba(255,255,255,0.9); + backdrop-filter: blur(10px); + border: 1px solid rgba(255,255,255,0.5); + } + .glow-ring { + position: relative; + overflow: hidden; + } + .glow-ring::before { + content: ''; + position: absolute; + inset: -40%; + background: conic-gradient(from 120deg, rgba(14,165,233,0.35), rgba(236,72,153,0.35), rgba(16,185,129,0.35), rgba(14,165,233,0.35)); + animation: spin 14s linear infinite; + filter: blur(30px); + } + .glow-ring::after { + content: ''; + position: absolute; + inset: 2px; + background: rgba(255,255,255,0.92); + border-radius: 1rem; + z-index: 1; + backdrop-filter: blur(10px); + } + @keyframes spin { + to { transform: rotate(360deg); } + } + .card { border-radius: 1rem; } + .quote-card { transition: transform 0.3s ease, box-shadow 0.3s ease; } + .quote-card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(15,23,42,0.15); } + .snow { position: fixed; inset: 0; pointer-events: none; background-image: radial-gradient(2px 2px at 20% 20%, rgba(255,255,255,0.6), transparent), radial-gradient(2px 2px at 80% 10%, rgba(255,255,255,0.5), transparent), radial-gradient(2px 2px at 50% 70%, rgba(255,255,255,0.6), transparent); opacity: 0.5; animation: snowfall 18s linear infinite; } + @keyframes snowfall { to { background-position: 0 600px, 0 400px, 0 500px; } } + </style> +</head> +<body class="pb-16"> + <div class="snow"></div> + <header class="relative overflow-hidden"> + <div class="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800 opacity-90"></div> + <div class="relative max-w-6xl mx-auto px-6 pt-14 pb-16 text-white"> + <div class="flex flex-col lg:flex-row items-center gap-10"> + <div class="flex-1 space-y-6"> + <p class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200 bg-white/10 px-4 py-2 rounded-full">Kingi lapsele kained jõulud</p> + <h1 class="text-4xl md:text-5xl font-bold leading-tight">Loome pühaderahu, kus lapsed tunnevad end hoituna ja rõõmsana.</h1> + <p class="text-lg text-slate-200 max-w-2xl">Kainus on jõulukingitus, mis kaitseb laste turvatunnet, tervist ja mälestusi. Aita muuta pühad ajaks, mil pered saavad olla koos – ilma alkoholist tulenevate riskideta.</p> + <div class="flex flex-wrap gap-3"> + <a href="#kink" class="bg-emerald-400 text-slate-900 font-semibold px-5 py-3 rounded-full shadow-lg hover:shadow-emerald-300/50 transition">Vaata, kuidas alustada</a> + <a href="#abi" class="bg-white/10 border border-white/30 text-white font-semibold px-5 py-3 rounded-full hover:bg-white/20 transition">Vajad nõu? Helista 116 123</a> + </div> + </div> + <div class="flex-1 w-full space-y-4"> + <figure class="relative overflow-hidden rounded-2xl border border-white/20 shadow-2xl bg-white/5 backdrop-blur"> + <img src="assets/header-spill.svg" alt="Ümberläinud veiniga klaas ja purunenud piparkoogid" class="w-full h-full object-cover max-h-[360px]"> + <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent px-6 py-4 text-sm text-slate-100">Pilt tuletab meelde, kui kiiresti võib alkohol muuta piduliku meeleolu ohtlikuks ja jätta lapsed hirmu keskele.</figcaption> + </figure> + <div class="glow-ring rounded-2xl"> + <div class="relative z-10 p-8 space-y-5 text-slate-900"> + <p class="text-sm uppercase tracking-[0.25em] text-emerald-600 font-semibold">Miks kainus loeb</p> + <div class="grid grid-cols-2 gap-4"> + <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-100"> + <p class="text-3xl font-bold text-emerald-700">70k+</p> + <p class="text-sm text-emerald-900">Lapsel on kodus alkoholiga seotud risk.</p> + </div> + <div class="p-4 rounded-xl bg-sky-50 border border-sky-100"> + <p class="text-3xl font-bold text-sky-700">1/1</p> + <p class="text-sm text-sky-900">Isegi üks jook võib häirida otsustusvõimet.</p> + </div> + <div class="col-span-2 p-4 rounded-xl bg-rose-50 border border-rose-100"> + <p class="text-xl font-semibold text-rose-700 mb-1">Laste hääl</p> + <p class="text-sm text-rose-900">"Kõige kurvem on, et täiskasvanud ei pane ennast lapse mõttemaailma." – PPA operatiivjuht Taavi Kirss</p> + </div> + </div> + <div class="flex items-center gap-2 text-xs text-slate-500"> + <span class="w-2 h-2 bg-emerald-400 rounded-full"></span> + Turvaline. Alkoholi- ja vägivallavaba. Lastele päriselt pühendatud. + </div> + </div> + </div> + </div> + </div> + </div> + </header> + + <main class="max-w-6xl mx-auto px-6 space-y-14 -mt-10"> + <section class="grid lg:grid-cols-3 gap-6"> + <div class="lg:col-span-2 frosted card p-8 shadow-2xl"> + <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-600">Kuidas lapsi kaitsta</p> + <h2 class="text-3xl font-bold text-slate-900 mb-4">Kingi lapsele kained jõulud</h2> + <p class="text-slate-700 mb-6">Koondasime viis lihtsat sammu, et luua turvalised, meeldejäävad ja armastusest kantud pühad.</p> + <div class="grid md:grid-cols-2 gap-4" id="kink"> + <article class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm"> + <div class="flex items-start gap-3"> + <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold">1</div> + <div> + <p class="font-semibold text-slate-900">Näita head eeskuju</p> + <p class="text-slate-700 text-sm">Lapsed peegeldavad vanemate käitumist. Kained pühad kujundavad tervislikud harjumused ja vähendavad tulevast riskijoomist.</p> + </div> + </div> + </article> + <article class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm"> + <div class="flex items-start gap-3"> + <div class="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center text-sky-700 font-bold">2</div> + <div> + <p class="font-semibold text-slate-900">Keskendu päris mälestustele</p> + <p class="text-slate-700 text-sm">Lase vaidlustest ja segadusest vabadel pühadel luua uusi traditsioone: küpsetamine, mängud, kaardid, talvised jalutused.</p> + </div> + </div> + </article> + <article class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm"> + <div class="flex items-start gap-3"> + <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-700 font-bold">3</div> + <div> + <p class="font-semibold text-slate-900">Raha jääb kinkideks ja tegevusteks</p> + <p class="text-slate-700 text-sm">Suuna pühade-eelarve mänguasjadele, raamatutele ja ühistele kogemustele. Alkohol ei peaks lapselt rõõmu röövima.</p> + </div> + </div> + </article> + <article class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm"> + <div class="flex items-start gap-3"> + <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center text-rose-700 font-bold">4</div> + <div> + <p class="font-semibold text-slate-900">Loo turvaline keskkond</p> + <p class="text-slate-700 text-sm">Ilutulestik, kelgumäed ja küünlad nõuavad kainet tähelepanu. Kainus vähendab õnnetuste ja konfliktide ohtu.</p> + </div> + </div> + </article> + <article class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm"> + <div class="flex items-start gap-3"> + <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-700 font-bold">5</div> + <div> + <p class="font-semibold text-slate-900">Aeg enda ja pere jaoks</p> + <p class="text-slate-700 text-sm">Kaine vanem on kohal ja puhanud. Pühenda aega mängudele, kuulamisele ja koosolekule.</p> + </div> + </div> + </article> + </div> + </div> + + <div class="space-y-4"> + <div class="card p-6 frosted shadow-xl"> + <p class="text-sm uppercase font-semibold tracking-[0.2em] text-rose-600">Riskid pühade ajal</p> + <h3 class="text-2xl font-bold text-slate-900 mb-3">EMO hoiatused</h3> + <p class="text-slate-700 text-sm leading-relaxed">EMOsse jõuab pühade ajal rohkem inimesi, sest alkoholi mõjul tekivad kaklused, kukkumised, liiklusõnnetused ja isegi tõsised alkoholimürgistused.</p> + <a class="text-emerald-700 font-semibold inline-flex items-center gap-1 mt-3" href="https://www.kliinikum.ee/emo-nouanded-puhadeajaks/" target="_blank" rel="noreferrer">Loe EMO nõuandeid →</a> + </div> + <div class="card p-6 frosted shadow-xl"> + <p class="text-sm uppercase font-semibold tracking-[0.2em] text-sky-600">Verejooksu peatav tõde</p> + <h3 class="text-2xl font-bold text-slate-900 mb-3">Otsustusvõime langeb</h3> + <p class="text-slate-700 text-sm">Teadlaste sõnul võib isegi üks alkohoolne jook kahjustada otsustusvõimet, kuigi motoorne kontroll võib tunduda korras.</p> + <a class="text-emerald-700 font-semibold inline-flex items-center gap-1 mt-3" href="https://www.medicalnewstoday.com/articles/321255#Drinking-impairs-decision-making" target="_blank" rel="noreferrer">Loe lähemalt →</a> + </div> + </div> + </section> + + <section class="grid lg:grid-cols-3 gap-6"> + <div class="lg:col-span-2 card frosted p-8 shadow-2xl"> + <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-600">Laste hääl pühadel</p> + <h2 class="text-3xl font-bold text-slate-900 mb-4">Mida ütlevad spetsialistid</h2> + <div class="relative"> + <div id="quote" class="quote-card bg-white p-6 rounded-2xl border border-slate-200 shadow-lg min-h-[220px]"></div> + <div class="flex justify-between mt-4"> + <button id="prev" class="px-4 py-2 bg-slate-900 text-white rounded-full shadow hover:bg-slate-800">Eelmine</button> + <div class="flex items-center gap-2"> + <span id="indicator" class="text-sm font-semibold text-slate-700"></span> + </div> + <button id="next" class="px-4 py-2 bg-emerald-500 text-slate-900 font-semibold rounded-full shadow hover:bg-emerald-400">Järgmine</button> + </div> + </div> + </div> + <div class="card frosted p-8 shadow-2xl space-y-4"> + <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">Teadus ja hool</p> + <h3 class="text-2xl font-bold text-slate-900">Mida uuringud näitavad</h3> + <ul class="space-y-3 text-slate-700 text-sm"> + <li class="flex gap-2"><span class="text-emerald-500">•</span><span>Isegi madal vanema alkoholitarbimine seostub laste vigastuste suurema riskiga; kaine järelevalve vähendab nii esinemissagedust kui raskusastet.</span></li> + <li class="flex gap-2"><span class="text-emerald-500">•</span><span>Pika pühadeperioodi liigne alkoholitarbimine süvendab krooniliste haiguste sümptomeid ja võib tuua EMOsse rohkem patsiente.</span></li> + <li class="flex gap-2"><span class="text-emerald-500">•</span><span>Alkoholi mõju all lahenevad konfliktid vägivallaga ning lapsed kutsuvad üha sagedamini politsei appi.</span></li> + </ul> + </div> + </section> + + <section class="card frosted p-8 shadow-2xl"> + <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6"> + <div> + <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-600">Tegutse nüüd</p> + <h2 class="text-3xl font-bold text-slate-900">Loo koos lapsega turvalised jõulud</h2> + <p class="text-slate-700 max-w-2xl mt-2">Laste jaoks on jõulud rõõmu aeg – hoidkem seda nii. Kainus annab ruumi armastusele, kuulamisele ja turvalistele mälestustele.</p> + </div> + <div class="flex flex-wrap gap-3"> + <a href="#abi" class="px-5 py-3 bg-emerald-500 text-slate-900 font-semibold rounded-full shadow hover:bg-emerald-400">Võta nõu</a> + <a href="https://tervisekassa.ee/blogi/joulude-mitu-nagu" target="_blank" rel="noreferrer" class="px-5 py-3 bg-white text-emerald-700 font-semibold rounded-full border border-emerald-200 hover:bg-emerald-50">Loe Tervisekassast</a> + </div> + </div> + <div class="grid md:grid-cols-3 gap-4 mt-6"> + <div class="p-4 rounded-xl bg-white border border-slate-200"> + <p class="text-sm font-semibold text-emerald-700">Pere rahu</p> + <p class="text-slate-700 text-sm">Perevägivalla teated sagenevad pühadel, eriti alkoholi tõttu. Lapsed ei peaks politseid kutsuma.</p> + </div> + <div class="p-4 rounded-xl bg-white border border-slate-200"> + <p class="text-sm font-semibold text-emerald-700">Tervislik tempo</p> + <p class="text-slate-700 text-sm">Üleliigne söömine ja alkohol süvendavad kroonilisi haigusi ning rikuvad pühadejärgseid päevi.</p> + </div> + <div class="p-4 rounded-xl bg-white border border-slate-200"> + <p class="text-sm font-semibold text-emerald-700">Pika vaatega otsus</p> + <p class="text-slate-700 text-sm">Eestis on üle 60 000 alkoholisõltuvusega inimese – iga perevalik vähendada tarbimist kaitseb lapsi tulevikus.</p> + </div> + </div> + </section> + + <section id="abi" class="grid md:grid-cols-3 gap-6"> + <div class="md:col-span-2 card frosted p-8 shadow-2xl"> + <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-600">Abi on olemas</p> + <h2 class="text-3xl font-bold text-slate-900">Helista, kirjuta, küsi nõu</h2> + <p class="text-slate-700 mb-4">Kui pühad toovad raskusi, oled jõudnud õigesse kohta. Küsi abi enne, kui olukord eskaleerub.</p> + <div class="flex flex-wrap gap-3"> + <a href="tel:116123" class="px-5 py-3 bg-emerald-500 text-slate-900 font-semibold rounded-full shadow hover:bg-emerald-400">Helista 116 123</a> + <a href="https://peaasi.ee/" target="_blank" rel="noreferrer" class="px-5 py-3 bg-white text-emerald-700 font-semibold rounded-full border border-emerald-200 hover:bg-emerald-50">Leia abi Peaasi.ee-st</a> + <a href="https://www.err.ee/1609560697/politsei-on-pidanud-puhade-ajal-ohjeldama-perevagivalda" target="_blank" rel="noreferrer" class="px-5 py-3 bg-slate-900 text-white font-semibold rounded-full hover:bg-slate-800">Loe PPA teadet</a> + </div> + </div> + <div class="card frosted p-8 shadow-2xl"> + <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-600">Pere kokkulepe</p> + <p class="text-slate-700">Kutsu pereliikmed kainuse leppest osa võtma. Märkige päevad, mil keegi ei tarbi alkoholi, ja premeerige end koosveedetud ajaga.</p> + <div class="mt-4 bg-white border border-slate-200 rounded-xl p-4 space-y-3"> + <label class="flex items-center gap-2 text-slate-800 text-sm"> + <input type="checkbox" class="w-4 h-4 text-emerald-500 border-slate-300 focus:ring-emerald-400" checked> + Reeded ja pühapäevad on alkoholivabad + </label> + <label class="flex items-center gap-2 text-slate-800 text-sm"> + <input type="checkbox" class="w-4 h-4 text-emerald-500 border-slate-300 focus:ring-emerald-400" checked> + Pühade ajal on vanemad kordamööda "turvavärav" + </label> + <label class="flex items-center gap-2 text-slate-800 text-sm"> + <input type="checkbox" class="w-4 h-4 text-emerald-500 border-slate-300 focus:ring-emerald-400"> + Lapsed valivad ühe uue alkoholivaba traditsiooni + </label> + </div> + </div> + </section> + </main> + + <footer class="max-w-6xl mx-auto px-6 mt-14 pb-10 text-slate-300 text-sm text-center"> + <p>Üheskoos kingime lastele turvalised ja kained jõulud. Hoia silma peal sõpradel, naabritel ja iseendal.</p> + </footer> + + <script> + const quotes = [ + { + text: '"Ma arvan, et kõige kurvem ongi see, et täiskasvanud lahendavad enda konflikte, aga nad ei pane ennast lapse mõttemaailma kuidagi. Ja vaesed lapsed, kes seda kõike pealt näevad ja püüavad siis kuidagi abi kutsuda."', + name: 'Põhja prefektuuri operatiivjuht Taavi Kirss', + link: 'https://www.err.ee/1608831418/politsei-tabas-puhade-ajal-purjus-juhte-ja-sai-rohkem-perevagivallateateid' + }, + { + text: '"Põhilised tervisemured võib-olla ongi seotud kas üleliigse söömisega – ka kroonilised haiged, nende seisund ägeneb, ka sellisest võibolla suurest soolase ja rasvase toidu rohkest tarbimisest – aga loomulikult ka liigne alkoholi tarvitamine."', + name: 'Perekliiniku õendusjuht Eva-Maria Sentifoli-Saluveer', + link: 'https://www.err.ee/1609204639/puhadeaeg-toi-emo-desse-tavaparasemast-enam-patsiente' + }, + { + text: '"Suures pildid saame öelda, et kui jõulud peaksid pakkuma inimestele rõõmu, siis on olnud mitmeid juhtumeid, et pere väikseimad, lapsed ja noored, on pidanud kutsuma politsei, sest vanemad tülitsevad. Kindlasti on seal põhjuseks alkohol ja siis hakatakse arusaamatusi lahendama vägivallaga."', + name: 'PPA vanemkomissar Marit Abram', + link: 'https://www.err.ee/1609560697/politsei-on-pidanud-puhade-ajal-ohjeldama-perevagivalda' + }, + { + text: '"Eestis on hinnanguliselt üle 60 000 alkoholisõltuvusega inimese ja ligikaudu 70 000–75 000 last elab peres, kus vähemalt üks vanem kannatab alkoholitarvitamise häire all. Jõulud, mis peaksid olema ühtekuuluvuse ja rõõmu aeg, võivad nende laste jaoks olla hoopis täis hirmu, ärevust ja ebakindlust."', + name: 'Tervisekassa sõltuvushäirete teenusejuht Anu Kivi', + link: 'https://tervisekassa.ee/blogi/joulude-mitu-nagu' + } + ]; + + let index = 0; + const quoteEl = document.getElementById('quote'); + const indicator = document.getElementById('indicator'); + const prevBtn = document.getElementById('prev'); + const nextBtn = document.getElementById('next'); + + function renderQuote(i) { + const q = quotes[i]; + quoteEl.innerHTML = + <p class="text-lg text-slate-900 leading-relaxed">${q.text}</p> + <div class="mt-4 flex items-center justify-between text-sm text-slate-700"> + <div> + <p class="font-semibold text-slate-900">${q.name}</p> + <a href="${q.link}" target="_blank" rel="noreferrer" class="text-emerald-600 hover:underline">Loe allikast</a> + </div> + <div class="text-xs text-slate-500 bg-slate-100 px-3 py-1 rounded-full">${i + 1}/${quotes.length}</div> + </div> + ; + indicator.textContent = ${i + 1} / ${quotes.length}; + } + + prevBtn.addEventListener('click', () => { + index = (index - 1 + quotes.length) % quotes.length; + renderQuote(index); + }); + + nextBtn.addEventListener('click', () => { + index = (index + 1) % quotes.length; + renderQuote(index); + }); + + renderQuote(index); + </script> +</body> +</html>
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alkohol ja Suitsidiennetus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .container {
+            max-width: 800px;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        .card:hover {
+            transform: translateY(-0.25rem);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .section-header {
+            position: relative;
+            z-index: 10;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -0.5rem;
+            height: 1.5rem;
+            background-color: currentColor;
+            z-index: -1;
+            border-radius: 0.25rem;
+        }
+        .section-header.bg-indigo-700::after { background-color: #4338ca; }
+        .section-header.bg-red-600::after { background-color: #dc2626; }
+        .section-header.bg-green-600::after { background-color: #16a34a; }
+        .icon-box {
+            background-color: #d1d5db;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.5rem;
+        }
+        .icon-text-container {
+            position: relative;
+        }
+        .icon-text-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.1);
+            transform: skew(-10deg) translate(0.25rem, 0.25rem);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="p-8 bg-gray-100">
+
+<div class="container mx-auto">
+    <!-- Header Section -->
+    <header class="text-center mb-16">
+        <div class="inline-block px-8 py-4 bg-white rounded-lg shadow-lg">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2 text-indigo-700">Alkohol ja suitsiidiennetus</h1>
+            <p class="text-lg md:text-xl text-gray-600">Ülemaailmsel suitsiidiennetuse päeval, muudame narratiivi.</p>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Section 1: Mis on seos? -->
+        <div class="card p-6">
+            <div class="bg-indigo-700 text-white p-4 rounded-t-lg font-bold text-xl section-header mb-6">Mida tõendid näitavad?</div>
+            <div class="flex items-start mb-6">
+                <div class="icon-box mr-4">
+                    <svg class="w-8 h-8 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-lg font-medium text-gray-700 mb-1">Suurem risk</p>
+                    <p class="text-gray-600">Alkoholi tarbimine on seotud ligi <span class="font-bold text-indigo-700">kahekordse</span> suitsiidist tingitud surma riskiga.</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <div class="icon-box mr-4">
+                    <svg class="w-8 h-8 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-lg font-medium text-gray-700 mb-1">Miks?</p>
+                    <p class="text-gray-600">Alkohol vähendab pidurdust, kahjustab otsustusvõimet ja soodustab impulsiivseid otsuseid.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Levinud arusaamad vs tegelikkus -->
+        <div class="card p-6">
+            <div class="bg-red-600 text-white p-4 rounded-t-lg font-bold text-xl section-header mb-6">Levinud arusaamised</div>
+            <div class="flex items-start mb-6">
+                <div class="icon-box mr-4 bg-red-200">
+                    <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-lg font-medium text-red-700 mb-1">Väär arusaam</p>
+                    <p class="text-gray-600">Alkohol on kiire leevendus pingete vähendamiseks.</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <div class="icon-box mr-4 bg-green-200">
+                    <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-lg font-medium text-green-700 mb-1">Tegelikkus</p>
+                    <p class="text-gray-600">Alkohol pikendab ja süvendab raskusi. See ei ole toimetuleku vahend, vaid <span class="font-bold text-red-700">riskifaktor</span>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3: Mida saame teha? -->
+    <div class="card mt-10 p-6">
+        <div class="bg-indigo-700 text-white p-4 rounded-t-lg font-bold text-xl section-header mb-6">Mida saame kohe teha?</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="text-center icon-text-container p-4">
+                <div class="flex justify-center items-center mb-2">
+                    <div class="icon-box bg-indigo-200">
+                        <svg class="w-8 h-8 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                        </svg>
+                    </div>
+                </div>
+                <p class="font-semibold text-gray-700">Muudame arusaamisi</p>
+            </div>
+            <div class="text-center icon-text-container p-4">
+                <div class="flex justify-center items-center mb-2">
+                    <div class="icon-box bg-indigo-200">
+                        <svg class="w-8 h-8 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a4 4 0 014-4h.25M17 19h4m-2-2v4"></path>
+                        </svg>
+                    </div>
+                </div>
+                <p class="font-semibold text-gray-700">Seome teenused</p>
+            </div>
+            <div class="text-center icon-text-container p-4">
+                <div class="flex justify-center items-center mb-2">
+                    <div class="icon-box bg-indigo-200">
+                        <svg class="w-8 h-8 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.01 12.01 0 002.944 12c.088 1.48.337 2.923.738 4.301M16 4h4v4m-5 9H5v-4"></path>
+                        </svg>
+                    </div>
+                </div>
+                <p class="font-semibold text-gray-700">Kinnitame tõenduspõhist poliitikat</p>
+            </div>
+            <div class="text-center icon-text-container p-4">
+                <div class="flex justify-center items-center mb-2">
+                    <div class="icon-box bg-indigo-200">
+                        <svg class="w-8 h-8 text-indigo-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <p class="font-semibold text-gray-700">Hoiame ukse avatuna</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section: Abiinfo -->
+    <div class="text-center mt-10">
+        <div class="card p-6">
+            <h2 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2">Kui vajad abi</h2>
+            <p class="text-lg text-gray-600 mb-4">Abi küsimine on tugevus.</p>
+            <a href="tel:116123" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105 mb-2">Helista 116 123</a>
+            <a href="https://peaasi.ee/" target="_blank" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">Leia abi Peaasi.ee-st</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kingi lapsele kained jõulud</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at 20% 20%, rgba(59,130,246,0.15), transparent 25%),
+                  radial-gradient(circle at 80% 0%, rgba(16,185,129,0.18), transparent 25%),
+                  #0f172a;
+      color: #0f172a;
+      min-height: 100vh;
+    }
+    .frosted {
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+    .glow-ring {
+      position: relative;
+      overflow: hidden;
+    }
+    .glow-ring::before {
+      content: '';
+      position: absolute;
+      inset: -40%;
+      background: conic-gradient(from 120deg, rgba(14,165,233,0.35), rgba(236,72,153,0.35), rgba(16,185,129,0.35), rgba(14,165,233,0.35));
+      animation: spin 14s linear infinite;
+      filter: blur(30px);
+    }
+    .glow-ring::after {
+      content: '';
+      position: absolute;
+      inset: 2px;
+      background: rgba(255,255,255,0.92);
+      border-radius: 1rem;
+      z-index: 1;
+      backdrop-filter: blur(10px);
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .card { border-radius: 1rem; }
+    .quote-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .quote-card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(15,23,42,0.15); }
+    .snow { position: fixed; inset: 0; pointer-events: none; background-image: radial-gradient(2px 2px at 20% 20%, rgba(255,255,255,0.6), transparent), radial-gradient(2px 2px at 80% 10%, rgba(255,255,255,0.5), transparent), radial-gradient(2px 2px at 50% 70%, rgba(255,255,255,0.6), transparent); opacity: 0.5; animation: snowfall 18s linear infinite; }
+    @keyframes snowfall { to { background-position: 0 600px, 0 400px, 0 500px; } }
+  </style>
+</head>
+<body class="pb-16">
+  <div class="snow"></div>
+  <header class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800 opacity-90"></div>
+    <div class="relative max-w-6xl mx-auto px-6 pt-14 pb-16 text-white">
+      <div class="flex flex-col lg:flex-row items-center gap-10">
+        <div class="flex-1 space-y-6">
+          <p class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200 bg-white/10 px-4 py-2 rounded-full">Kingi lapsele kained jõulud</p>
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight">Loome pühaderahu, kus lapsed tunnevad end hoituna ja rõõmsana.</h1>
+          <p class="text-lg text-slate-200 max-w-2xl">Kainus on jõulukingitus, mis kaitseb laste turvatunnet, tervist ja mälestusi. Aita muuta pühad ajaks, mil pered saavad olla koos – ilma alkoholist tulenevate riskideta.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="#kink" class="bg-emerald-400 text-slate-900 font-semibold px-5 py-3 rounded-full shadow-lg hover:shadow-emerald-300/50 transition">Vaata, kuidas alustada</a>
+            <a href="#abi" class="bg-white/10 border border-white/30 text-white font-semibold px-5 py-3 rounded-full hover:bg-white/20 transition">Vajad nõu? Helista 116 123</a>
+          </div>
+        </div>
+        <div class="flex-1 w-full space-y-4">
+          <figure class="relative overflow-hidden rounded-2xl border border-white/20 shadow-2xl bg-white/5 backdrop-blur">
+            <img src="assets/header-spill.svg" alt="Ümberläinud veiniga klaas ja purunenud piparkoogid" class="w-full h-full object-cover max-h-[360px]">
+            <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent px-6 py-4 text-sm text-slate-100">Pilt tuletab meelde, kui kiiresti võib alkohol muuta piduliku meeleolu ohtlikuks ja jätta lapsed hirmu keskele.</figcaption>
+          </figure>
+          <div class="glow-ring rounded-2xl">
+            <div class="relative z-10 p-8 space-y-5 text-slate-900">
+              <p class="text-sm uppercase tracking-[0.25em] text-emerald-600 font-semibold">Miks kainus loeb</p>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-100">
+                  <p class="text-3xl font-bold text-emerald-700">70k+</p>
+                  <p class="text-sm text-emerald-900">Lapsel on kodus alkoholiga seotud risk.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-sky-50 border border-sky-100">
+                  <p class="text-3xl font-bold text-sky-700">1/1</p>
+                  <p class="text-sm text-sky-900">Isegi üks jook võib häirida otsustusvõimet.</p>
+                </div>
+                <div class="col-span-2 p-4 rounded-xl bg-rose-50 border border-rose-100">
+                  <p class="text-xl font-semibold text-rose-700 mb-1">Laste hääl</p>
+                  <p class="text-sm text-rose-900">"Kõige kurvem on, et täiskasvanud ei pane ennast lapse mõttemaailma." – PPA operatiivjuht Taavi Kirss</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-slate-500">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full"></span>
+                Turvaline. Alkoholi- ja vägivallavaba. Lastele päriselt pühendatud.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 space-y-14 -mt-10">
+    <section class="grid lg:grid-cols-3 gap-6">
+      <div class="lg:col-span-2 frosted card p-8 shadow-2xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-600">Kuidas lapsi kaitsta</p>
+        <h2 class="text-3xl font-bold text-slate-900 mb-4">Kingi lapsele kained jõulud</h2>
+        <p class="text-slate-700 mb-6">Koondasime viis lihtsat sammu, et luua turvalised, meeldejäävad ja armastusest kantud pühad.</p>
+        <div class="grid md:grid-cols-2 gap-4" id="kink">
+          <article class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold">1</div>
+              <div>
+                <p class="font-semibold text-slate-900">Näita head eeskuju</p>
+                <p class="text-slate-700 text-sm">Lapsed peegeldavad vanemate käitumist. Kained pühad kujundavad tervislikud harjumused ja vähendavad tulevast riskijoomist.</p>
+              </div>
+            </div>
+          </article>
+          <article class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-full bg-sky-100 flex items-center justify-center text-sky-700 font-bold">2</div>
+              <div>
+                <p class="font-semibold text-slate-900">Keskendu päris mälestustele</p>
+                <p class="text-slate-700 text-sm">Lase vaidlustest ja segadusest vabadel pühadel luua uusi traditsioone: küpsetamine, mängud, kaardid, talvised jalutused.</p>
+              </div>
+            </div>
+          </article>
+          <article class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-700 font-bold">3</div>
+              <div>
+                <p class="font-semibold text-slate-900">Raha jääb kinkideks ja tegevusteks</p>
+                <p class="text-slate-700 text-sm">Suuna pühade-eelarve mänguasjadele, raamatutele ja ühistele kogemustele. Alkohol ei peaks lapselt rõõmu röövima.</p>
+              </div>
+            </div>
+          </article>
+          <article class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center text-rose-700 font-bold">4</div>
+              <div>
+                <p class="font-semibold text-slate-900">Loo turvaline keskkond</p>
+                <p class="text-slate-700 text-sm">Ilutulestik, kelgumäed ja küünlad nõuavad kainet tähelepanu. Kainus vähendab õnnetuste ja konfliktide ohtu.</p>
+              </div>
+            </div>
+          </article>
+          <article class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-700 font-bold">5</div>
+              <div>
+                <p class="font-semibold text-slate-900">Aeg enda ja pere jaoks</p>
+                <p class="text-slate-700 text-sm">Kaine vanem on kohal ja puhanud. Pühenda aega mängudele, kuulamisele ja koosolekule.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <div class="card p-6 frosted shadow-xl">
+          <p class="text-sm uppercase font-semibold tracking-[0.2em] text-rose-600">Riskid pühade ajal</p>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3">EMO hoiatused</h3>
+          <p class="text-slate-700 text-sm leading-relaxed">EMOsse jõuab pühade ajal rohkem inimesi, sest alkoholi mõjul tekivad kaklused, kukkumised, liiklusõnnetused ja isegi tõsised alkoholimürgistused.</p>
+          <a class="text-emerald-700 font-semibold inline-flex items-center gap-1 mt-3" href="https://www.kliinikum.ee/emo-nouanded-puhadeajaks/" target="_blank" rel="noreferrer">Loe EMO nõuandeid →</a>
+        </div>
+        <div class="card p-6 frosted shadow-xl">
+          <p class="text-sm uppercase font-semibold tracking-[0.2em] text-sky-600">Verejooksu peatav tõde</p>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3">Otsustusvõime langeb</h3>
+          <p class="text-slate-700 text-sm">Teadlaste sõnul võib isegi üks alkohoolne jook kahjustada otsustusvõimet, kuigi motoorne kontroll võib tunduda korras.</p>
+          <a class="text-emerald-700 font-semibold inline-flex items-center gap-1 mt-3" href="https://www.medicalnewstoday.com/articles/321255#Drinking-impairs-decision-making" target="_blank" rel="noreferrer">Loe lähemalt →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid lg:grid-cols-3 gap-6">
+      <div class="lg:col-span-2 card frosted p-8 shadow-2xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-600">Laste hääl pühadel</p>
+        <h2 class="text-3xl font-bold text-slate-900 mb-4">Mida ütlevad spetsialistid</h2>
+        <div class="relative">
+          <div id="quote" class="quote-card bg-white p-6 rounded-2xl border border-slate-200 shadow-lg min-h-[220px]"></div>
+          <div class="flex justify-between mt-4">
+            <button id="prev" class="px-4 py-2 bg-slate-900 text-white rounded-full shadow hover:bg-slate-800">Eelmine</button>
+            <div class="flex items-center gap-2">
+              <span id="indicator" class="text-sm font-semibold text-slate-700"></span>
+            </div>
+            <button id="next" class="px-4 py-2 bg-emerald-500 text-slate-900 font-semibold rounded-full shadow hover:bg-emerald-400">Järgmine</button>
+          </div>
+        </div>
+      </div>
+      <div class="card frosted p-8 shadow-2xl space-y-4">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">Teadus ja hool</p>
+        <h3 class="text-2xl font-bold text-slate-900">Mida uuringud näitavad</h3>
+        <ul class="space-y-3 text-slate-700 text-sm">
+          <li class="flex gap-2"><span class="text-emerald-500">•</span><span>Isegi madal vanema alkoholitarbimine seostub laste vigastuste suurema riskiga; kaine järelevalve vähendab nii esinemissagedust kui raskusastet.</span></li>
+          <li class="flex gap-2"><span class="text-emerald-500">•</span><span>Pika pühadeperioodi liigne alkoholitarbimine süvendab krooniliste haiguste sümptomeid ja võib tuua EMOsse rohkem patsiente.</span></li>
+          <li class="flex gap-2"><span class="text-emerald-500">•</span><span>Alkoholi mõju all lahenevad konfliktid vägivallaga ning lapsed kutsuvad üha sagedamini politsei appi.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card frosted p-8 shadow-2xl">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-600">Tegutse nüüd</p>
+          <h2 class="text-3xl font-bold text-slate-900">Loo koos lapsega turvalised jõulud</h2>
+          <p class="text-slate-700 max-w-2xl mt-2">Laste jaoks on jõulud rõõmu aeg – hoidkem seda nii. Kainus annab ruumi armastusele, kuulamisele ja turvalistele mälestustele.</p>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a href="#abi" class="px-5 py-3 bg-emerald-500 text-slate-900 font-semibold rounded-full shadow hover:bg-emerald-400">Võta nõu</a>
+          <a href="https://tervisekassa.ee/blogi/joulude-mitu-nagu" target="_blank" rel="noreferrer" class="px-5 py-3 bg-white text-emerald-700 font-semibold rounded-full border border-emerald-200 hover:bg-emerald-50">Loe Tervisekassast</a>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4 mt-6">
+        <div class="p-4 rounded-xl bg-white border border-slate-200">
+          <p class="text-sm font-semibold text-emerald-700">Pere rahu</p>
+          <p class="text-slate-700 text-sm">Perevägivalla teated sagenevad pühadel, eriti alkoholi tõttu. Lapsed ei peaks politseid kutsuma.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-white border border-slate-200">
+          <p class="text-sm font-semibold text-emerald-700">Tervislik tempo</p>
+          <p class="text-slate-700 text-sm">Üleliigne söömine ja alkohol süvendavad kroonilisi haigusi ning rikuvad pühadejärgseid päevi.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-white border border-slate-200">
+          <p class="text-sm font-semibold text-emerald-700">Pika vaatega otsus</p>
+          <p class="text-slate-700 text-sm">Eestis on üle 60 000 alkoholisõltuvusega inimese – iga perevalik vähendada tarbimist kaitseb lapsi tulevikus.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="abi" class="grid md:grid-cols-3 gap-6">
+      <div class="md:col-span-2 card frosted p-8 shadow-2xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-600">Abi on olemas</p>
+        <h2 class="text-3xl font-bold text-slate-900">Helista, kirjuta, küsi nõu</h2>
+        <p class="text-slate-700 mb-4">Kui pühad toovad raskusi, oled jõudnud õigesse kohta. Küsi abi enne, kui olukord eskaleerub.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="tel:116123" class="px-5 py-3 bg-emerald-500 text-slate-900 font-semibold rounded-full shadow hover:bg-emerald-400">Helista 116 123</a>
+          <a href="https://peaasi.ee/" target="_blank" rel="noreferrer" class="px-5 py-3 bg-white text-emerald-700 font-semibold rounded-full border border-emerald-200 hover:bg-emerald-50">Leia abi Peaasi.ee-st</a>
+          <a href="https://www.err.ee/1609560697/politsei-on-pidanud-puhade-ajal-ohjeldama-perevagivalda" target="_blank" rel="noreferrer" class="px-5 py-3 bg-slate-900 text-white font-semibold rounded-full hover:bg-slate-800">Loe PPA teadet</a>
+        </div>
+      </div>
+      <div class="card frosted p-8 shadow-2xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-600">Pere kokkulepe</p>
+        <p class="text-slate-700">Kutsu pereliikmed kainuse leppest osa võtma. Märkige päevad, mil keegi ei tarbi alkoholi, ja premeerige end koosveedetud ajaga.</p>
+        <div class="mt-4 bg-white border border-slate-200 rounded-xl p-4 space-y-3">
+          <label class="flex items-center gap-2 text-slate-800 text-sm">
+            <input type="checkbox" class="w-4 h-4 text-emerald-500 border-slate-300 focus:ring-emerald-400" checked>
+            Reeded ja pühapäevad on alkoholivabad
+          </label>
+          <label class="flex items-center gap-2 text-slate-800 text-sm">
+            <input type="checkbox" class="w-4 h-4 text-emerald-500 border-slate-300 focus:ring-emerald-400" checked>
+            Pühade ajal on vanemad kordamööda "turvavärav"
+          </label>
+          <label class="flex items-center gap-2 text-slate-800 text-sm">
+            <input type="checkbox" class="w-4 h-4 text-emerald-500 border-slate-300 focus:ring-emerald-400">
+            Lapsed valivad ühe uue alkoholivaba traditsiooni
+          </label>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="max-w-6xl mx-auto px-6 mt-14 pb-10 text-slate-300 text-sm text-center">
+    <p>Üheskoos kingime lastele turvalised ja kained jõulud. Hoia silma peal sõpradel, naabritel ja iseendal.</p>
+  </footer>
+
+  <script>
+    const quotes = [
+      {
+        text: '"Ma arvan, et kõige kurvem ongi see, et täiskasvanud lahendavad enda konflikte, aga nad ei pane ennast lapse mõttemaailma kuidagi. Ja vaesed lapsed, kes seda kõike pealt näevad ja püüavad siis kuidagi abi kutsuda."',
+        name: 'Põhja prefektuuri operatiivjuht Taavi Kirss',
+        link: 'https://www.err.ee/1608831418/politsei-tabas-puhade-ajal-purjus-juhte-ja-sai-rohkem-perevagivallateateid'
+      },
+      {
+        text: '"Põhilised tervisemured võib-olla ongi seotud kas üleliigse söömisega – ka kroonilised haiged, nende seisund ägeneb, ka sellisest võibolla suurest soolase ja rasvase toidu rohkest tarbimisest – aga loomulikult ka liigne alkoholi tarvitamine."',
+        name: 'Perekliiniku õendusjuht Eva-Maria Sentifoli-Saluveer',
+        link: 'https://www.err.ee/1609204639/puhadeaeg-toi-emo-desse-tavaparasemast-enam-patsiente'
+      },
+      {
+        text: '"Suures pildid saame öelda, et kui jõulud peaksid pakkuma inimestele rõõmu, siis on olnud mitmeid juhtumeid, et pere väikseimad, lapsed ja noored, on pidanud kutsuma politsei, sest vanemad tülitsevad. Kindlasti on seal põhjuseks alkohol ja siis hakatakse arusaamatusi lahendama vägivallaga."',
+        name: 'PPA vanemkomissar Marit Abram',
+        link: 'https://www.err.ee/1609560697/politsei-on-pidanud-puhade-ajal-ohjeldama-perevagivalda'
+      },
+      {
+        text: '"Eestis on hinnanguliselt üle 60 000 alkoholisõltuvusega inimese ja ligikaudu 70 000–75 000 last elab peres, kus vähemalt üks vanem kannatab alkoholitarvitamise häire all. Jõulud, mis peaksid olema ühtekuuluvuse ja rõõmu aeg, võivad nende laste jaoks olla hoopis täis hirmu, ärevust ja ebakindlust."',
+        name: 'Tervisekassa sõltuvushäirete teenusejuht Anu Kivi',
+        link: 'https://tervisekassa.ee/blogi/joulude-mitu-nagu'
+      }
+    ];
+
+    let index = 0;
+    const quoteEl = document.getElementById('quote');
+    const indicator = document.getElementById('indicator');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+
+    function renderQuote(i) {
+      const q = quotes[i];
+      quoteEl.innerHTML = `
+        <p class="text-lg text-slate-900 leading-relaxed">${q.text}</p>
+        <div class="mt-4 flex items-center justify-between text-sm text-slate-700">
+          <div>
+            <p class="font-semibold text-slate-900">${q.name}</p>
+            <a href="${q.link}" target="_blank" rel="noreferrer" class="text-emerald-600 hover:underline">Loe allikast</a>
+          </div>
+          <div class="text-xs text-slate-500 bg-slate-100 px-3 py-1 rounded-full">${i + 1}/${quotes.length}</div>
+        </div>
+      `;
+      indicator.textContent = `${i + 1} / ${quotes.length}`;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      index = (index - 1 + quotes.length) % quotes.length;
+      renderQuote(index);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      index = (index + 1) % quotes.length;
+      renderQuote(index);
+    });
+
+    renderQuote(index);
+  </script>
+</body>
+</html>
